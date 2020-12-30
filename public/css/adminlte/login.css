@@ -1,0 +1,180 @@
+body{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-content{
+    margin-top:5%;
+}
+
+.back-style{
+    width: 647px;
+    height: 546px;
+    background: rgba(106,105,105,0.32);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.information{
+    width: 599px;
+    height: 498px;
+    margin: 24px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
+    background: white;
+    position: absolute;
+}
+
+.title_text{
+    display: block;
+    margin-top: 39px;
+}
+
+.title_translate{
+    display: block;
+    margin-top: 13px;
+}
+
+.title{
+    font-family: SourceHanSansSC;
+    font-weight: 400;
+    font-size: 28px;
+    color: rgb(16, 16, 16);
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 41px;
+    text-decoration: none;
+}
+
+.translate{
+    font-family: SourceHanSansSC;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(121, 119, 119);
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-decoration: none;
+
+}
+
+.login_information{
+    margin-top: 13px;
+    margin-left: 109px;
+    width:381px;
+    height:44px;
+    border-radius: 10px;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: #bbb;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+    line-height: 17px;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+}
+
+.icon{
+    float:left;
+    margin: 10px 0 0 13px;
+    height: 24px;
+}
+
+.message{
+    width:313px;
+    height:30px;
+    float:right;
+    margin:7px 5px 0 0;
+    border-width:0;
+    outline: none;
+    font-size: 12px;
+}
+
+.check{
+    float: left;
+    font-size: 12px;
+    margin: 6px 0 0 109px;
+    vertical-align:middle;
+    color: rgba(106, 105, 105, 1);
+}
+
+.save{
+    font-family: SourceHanSansSC;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 18px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+.click{
+    float: right;
+    margin: 13px 109px 0 0;
+    font-weight: 400;
+    color: rgb(106, 105, 105);
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.submit{
+    width: 184px;
+    height: 35px;
+    margin-top: 83px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 81, 181);
+    border-radius: 10px;
+    font-size: 14px;
+    border-width: 0px;
+    border-style: solid;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+    outline: none;
+}
+
+.footer{
+    height: 20px;
+    margin-top: 35px;
+}
+
+.banquan{
+    font-family: SourceHanSansSC;
+    font-size: 14px;
+    color: rgba(121, 119, 119, 1);
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 20px;
+    text-decoration: none;
+    margin-left: 11px;
+}
+
+.copyright{
+    width: 18px;
+    height: 18px;
+    border-width: 0px;
+    border-style: solid;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+    vertical-align: text-bottom;
+}
+
+.login-submit{
+    background-color:#F3570D !important;
+    cursor: pointer;
+}

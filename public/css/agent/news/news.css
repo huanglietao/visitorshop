@@ -1,0 +1,60 @@
+/** 消息管理样式 */
+#main{
+    font-size: 14px;
+    padding: 25px;
+    overflow: hidden
+}
+ul{
+    list-style: none;
+    padding: 0
+}
+
+.newsnav_tab{padding:10px 0 20px}
+.table-head,.tbl-content tr td{text-align: left !important;}
+.tbl-content p,.tbl-content a{color: #6A6969!important;}
+.news_title{
+    position: relative;
+    display: flex;
+}
+.news_readsign {
+    display: block;
+    background: rgb(86, 119, 252);
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: -15px;
+    position: absolute;
+}
+.news_title .newsign{
+    display: block;
+    float: right;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background: rgb(229, 28, 35);
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/*详情*/
+.detail_main{margin-top: 100px;height: 90%}
+.detail_main .content_middle{margin: 0 35px}
+.detail_main .cont_author_time{
+    text-align: center;
+}
+.detail_title{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.detail_content{margin:45px 40px 0}
+.news_retrun{text-align: center}
+@media only screen and (max-width: 1240px) {
+    .table-head td:first-child{
+        width: 7% !important;
+    }
+}

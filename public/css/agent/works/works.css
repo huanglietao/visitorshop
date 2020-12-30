@@ -1,0 +1,158 @@
+/** 作品相关样式*/
+*{padding: 0px; margin: 0}
+#main{
+    font-size: 12px;
+    padding: 25px;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    padding: 0
+}
+
+.works_checkBox{
+    float: left;
+    margin-bottom: 20px;
+}
+.nav_tab{margin: 20px 0}
+.down-act-btn{margin:5px 0 0 15px;float: left;}
+.works_info_td{width: 19%}
+.works_attr_td{width: 13%}
+.works_status_td{width: 5%}
+.works_buy_td{width: 14%}
+.works_label_td{width: 8%}
+.works_operate_td{width: 10%}
+.tbl-content tr td{
+    padding: 16px;
+    vertical-align:super;
+}
+/*.works_msg{vertical-align:inherit !important;}*/
+.tbl-content tr td .works_info{
+    text-align: left;
+    display: flex;
+}
+/*.tbl-content tr td .works_info .works_opt{
+    width: 24px !important;
+    height: 18px !important;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}*/
+.tbl-content tr td .works_info .works_img img{
+    width: 75px;
+    max-height: 100px;
+    margin: 0 25px;
+}
+/*.works_info_td{*/
+    /*vertical-align:inherit !important;*/
+/*}*/
+.tbl-content tr td .works_info .works_detail p a{
+    color: rgba(63, 81, 181, 1);
+    text-decoration:underline;
+}
+.tbl-content tr td .works_info .works_detail p a:hover{
+   cursor: pointer;
+    color:rgb(13, 46, 231);
+    text-decoration: underline;
+}
+.last_p{margin-bottom:0px }
+.tbl-content tr td .works_attr, .works_operate{
+    text-align: left;
+    display: table;
+}
+.works_operate p{
+    margin-bottom: 8px;
+    color:rgb(63, 81, 181);
+}
+.works_operate p span{
+    margin:0 10px;
+    color:rgb(63, 81, 181);
+}
+.works_operate p span:hover{
+    cursor: pointer;
+    color:rgb(13, 46, 231);
+    text-decoration: underline;
+}
+
+#checkWorks, #checkAllWorks,#checkAllWorksOther{
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    -webkit-appearance:none;
+    border: 2px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkWorks:checked,#checkAllWorks:checked,#checkAllWorksOther:checked{
+    background: url("../../../images/check.png")no-repeat center;
+    background-color: #5677fc;
+    border:none;
+}
+#checkAllWorksOther:checked{
+    background: url("../../../images/check.png")no-repeat center;
+    background-color: #5677fc;
+    border:none;
+}
+#checkOprate{
+    margin-bottom: 20px;
+    display: block;
+    float: right;
+    margin: 0 10px;
+    font-size: 12px!important;
+}
+.reservationtime{padding-left: 0}
+
+/* 标签作品样式 */
+.input_textbox{
+    display: block;
+    margin: 50px auto;
+    line-height: 25px;
+    width: 82%;
+}
+/* 修改作品*/
+.label-content {
+    margin-top: 7px;
+    padding-left: 0;
+    font-weight: normal;
+    color: #212529 !important;
+}
+/* 标签作品*/
+.remarks-form{margin-top: 0}
+@media only screen and (max-width: 1280px) {
+    .works_operate p span{
+        display: block;
+        margin-bottom:8px;
+    }
+}
+
+/*.layui-layer-content{*/
+    /*padding: 30px 50px;*/
+/*}*/
+
+.well-sm {
+    padding: 9px;
+    border-radius: 2px;
+}
+
+.well {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.skin-class .layui-layer-title{
+    color: white;
+    background-color: #3F51B5;
+}
+
+.skin-class .layui-layer-btn a{
+    background: #3F51B5;
+    border-color: #3F51B5;
+    color: white;
+}

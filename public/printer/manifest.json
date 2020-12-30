@@ -1,0 +1,21 @@
+{
+	"initial": [
+		"js/egret.min_37f7c522.js",
+		"js/egret.web.min_9cc00ee1.js",
+		"js/eui.min_493403ce.js",
+		"js/assetsmanager.min_6364ebb2.js",
+		"js/tween.min_6c5a88f9.js",
+		"js/game.min_16249d0f.js",
+		"js/promise.min_83a6a5d.js",
+		"js/plupload.min_b8edaddb.js",
+		"js/jquery.min_22fcce72.js",
+		"js/exif.min_a997db3e.js",
+		"js/lunar_calendar.min_d9daafbd.js",
+		"js/keyboard.min_85f60ff8.js",
+		"js/mouse.min_c171ee8c.js"
+	],
+	"game": [
+		"js/default.thm_58b1ef9a.js",
+		"js/main.min_811e51bd.js"
+	]
+}

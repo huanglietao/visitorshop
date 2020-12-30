@@ -1,0 +1,34 @@
+.form-horizontal .row select{
+    height:30px;
+    font-size: 12px;
+    color: #888;
+    border: 1px solid #ced4da;
+}
+
+.form-avatar{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #bbb;
+    margin-left: -7px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-horizontal #avatar{
+    width: 80px;height: 100%;opacity: 0;position: absolute;cursor: pointer
+}
+
+.form-horizontal .background-jia{
+    margin-top: 30%;margin-left: 42%;width: 10px;height: 10px;color: #bbb;outline: 15px solid;outline-offset: -19px;
+}
+
+.form-horizontal .background-text{
+    position:absolute;top:45px;left:16px;font-size: 12px;color: rgba(0,0,0,0.65);
+}
+
+.control-span{
+    color:rgba(229, 28, 35, 1);
+    margin-right: 10px;
+}

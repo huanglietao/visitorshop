@@ -1,0 +1,36 @@
+<?php
+namespace DummyNamespace;
+
+use #base_controller#;
+use #request_namespace#;
+use App\Repositories\#table#Repository;
+
+/**
+ * 项目说明
+ * 详细说明
+ * @author:
+ * @version: 1.0
+ * @date:
+ */
+class DummyClass extends BaseController
+{
+    protected $viewPath = '#view_path#';  //当前控制器所的view所在的目录
+    protected $modules = 'sys';        //当前控制器所属模块
+    public function __construct(#table#Repository $Repository)
+    {
+        parent::__construct();
+        $this->repositories = $Repository;
+    }
+
+   //添加/编辑操作
+    public function save(#controller#Request $request)
+    {
+        $ret = $this->repositories->save($request->all());
+        if ($ret) {
+            return $this->jsonSuccess([]);
+        } else {
+            return $this->jsonFailed('');
+        }
+    }
+
+}

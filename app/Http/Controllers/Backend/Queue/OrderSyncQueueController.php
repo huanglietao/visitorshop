@@ -1,0 +1,83 @@
+<?php
+namespace App\Http\Controllers\Backend\Queue;
+
+use App\Exceptions\CommonException;
+use App\Http\Controllers\Backend\BaseController;
+use App\Repositories\DmsAgentInfoRepository;
+use App\Repositories\SaasOrderSyncQueueRepository;
+use App\Services\Helper;
+use Illuminate\Http\Request;
+
+/**
+ * 项目说明
+ * 同步队列功能
+ * @author: david
+ * @version: 1.0
+ * @date: 2020/7/2
+ */
+class OrderSyncQueueController extends BaseController
+{
+    protected $viewPath = 'backend.queue.ordersyncqueue';  //当前控制器所的view所在的目录
+    protected $modules = 'sys';        //当前控制器所属模块
+    public function __construct(SaasOrderSyncQueueRepository $Repository,
+                                DmsAgentInfoRepository $dmsAgentInfoRepository
+                                )
+    {
+        parent::__construct();
+        $this->repositories     = $Repository;
+        $this->dmsAgentInfoRepo = $dmsAgentInfoRepository;
+
+        //获取统计同步状态
+        $this->queueStatus = $this->repositories->getQueueStatus();
+        $this->queueStatusList = config('common.syncStatus');
+    }
+
+    //列表
+    public function index()
+    {
+        $queueStatusList = Helper::getChooseSelectData($this->queueStatusList);
+        return view('backend.queue.ordersyncqueue.index',['queueStatus'=>$this->queueStatus,'queueStatusList'=>$queueStatusList]);
+    }
+
+    //ajax数据
+    protected function table(Request $request)
+    {
+        try {
+
+            $inputs = $request->all();
+            $list = $this->repositories->getTableList($inputs,'created_at desc');
+            //获取分销用户
+            $agentList = $this->dmsAgentInfoRepo->getList([])->toArray();
+            $agentList = Helper::ListToKV('agent_info_id','agent_name',$agentList);
+
+            $htmlContents = $this->renderHtml('',
+                ['list' =>$list,'goodsType'=>config('order.big_type'),'agentList'=>$agentList,'queueStatusList'=>$this->queueStatusList]);
+            //转数组取总数量
+            $pagesInfo = $list->toArray();
+            $total = $pagesInfo['total'];
+
+            return $this->jsonSuccess(['html' => $htmlContents,'total' => $total]);
+        } catch (CommonException $e) {
+            //统一收集错误再做处理
+            return $this->jsonFailed($e->getMessage());
+        }
+
+    }
+
+    //改变状态
+    public function changQueueStatus(Request $request)
+    {
+        $post = $request->all();
+        $ret = $this->repositories->updateQueueStatus($post);
+        if($ret){
+            return $this->jsonSuccess([]);
+        }else{
+            return $this->jsonFailed('操作失败');
+        }
+
+    }
+
+
+
+
+}

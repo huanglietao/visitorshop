@@ -1,0 +1,96 @@
+/*搜索*/
+.fa-calendar{
+    color: #a9a9a9;
+    position: absolute;
+    vertical-align: middle;
+    top: 31%;
+    right: 0;
+    padding-right: 13px;
+}
+.search-data-num{
+    padding-top: 5px!important;
+    margin-left: 13px;
+    font-weight: normal;
+    color: #6A6969;
+    cursor: pointer;
+}
+
+.search-row{
+    margin-left: -3px;
+}
+
+.form-control{
+    font-size: 12px;
+}
+
+.form-select{
+    width: 98%;!important: ;
+    height: 30px;!important: ;
+    padding:4px 8px;
+    color: rgb(106, 105, 105);
+    font-size: 12px;
+}
+
+@media(min-width:992px) and (max-width:1200px){
+    .duration-search-label{
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+        padding-left: 0;
+    }
+    .duration-search-label .search-time{
+        padding: 0;
+    }
+
+}
+@media(max-width:992px){
+    .first_o_group{
+        margin-bottom: 16px !important;
+    }
+
+}
+
+
+/*添加管理员*/
+
+.form-horizontal .row select{
+    height:30px;
+    font-size: 12px;
+    color: #888;
+    border: 1px solid #ced4da;
+}
+
+.form-avatar{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #bbb;
+    margin-left: -7px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-horizontal #avatar{
+    width: 80px;height: 100%;opacity: 0;position: absolute;cursor: pointer
+}
+
+.form-horizontal .background-jia{
+    margin-top: 30%;margin-left: 42%;width: 10px;height: 10px;color: #bbb;outline: 15px solid;outline-offset: -19px;
+}
+
+.form-horizontal .background-text{
+    position:absolute;top:45px;left:16px;font-size: 12px;color: rgba(0,0,0,0.65);
+}
+
+.control-span{
+    color:rgba(229, 28, 35, 1);
+    margin-right: 10px;
+}
+
+
+.oa_operate:hover{
+    cursor: pointer;
+    color: rgb(13, 46, 231)!important;
+    text-decoration: underline!important;
+}
+

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*!
+ *   扩展adminlte样式
+ */
+body{margin:0;padding:0}
+
+/*伸缩箭头样式*/
+    .next-btn {
+    position: absolute!important;
+    right: -22px;
+    z-index: 9;
+    padding: 0!important;
+    border-width: 9px 0 9px 20px;
+    border-color: transparent transparent transparent #ebebeb;
+    background: none;
+    width: 0;
+    height: 64px!important;
+    line-height: 46px;
+    color: #c1c1c1!important;
+    border-style: solid;
+
+
+}
+    .next-btn:hover{
+        right: -24px;
+        border-left-color: #dedede;
+        color: #888;
+    }
+
+
+
+
+.navbar-F1F2F6 {
+    background-color: #F1F2F6;
+}
+
+.header-sys {
+    border-left:1px solid #DCDFE6;
+    border-top:1px solid #DCDFE6;
+    padding-left:1.5rem;
+    padding-right:1.5rem
+}
+.sys-active {
+    background:#F1F2F6
+}
+
+.menu-lv-1{
+    padding-left:1px !important;
+}
+
+sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active, .sidebar-dark-primary .nav-treeview>.nav-item>.nav-link:hover{
+    background-color:rgb(237, 237, 237);
+}
+
+.xj_selected {
+    color: #fff;
+    background-color: rgba(255,255,255,.1);
+}
+.os-content{
+    padding: 0px 0px !important;
+}
+.crumb{
+    width:100%;height:30px;line-height: 30px;border-bottom:1px solid gray
+}
+
+.wrapper .content-wrapper {
+
+}
+
+.btn-3F51B5 {
+    background-color: #3F51B5; !important;
+    border-color: #3F51B5;!important;
+}
+
+.wrapper .content-wrapper {
+    min-height: 800px; !important;
+}
+.zdj-footer{
+    position:fixed;font-size:12px;bottom:0px;background:rgb(245, 245, 245);color: rgb(141, 158, 167);border-top: 1px solid rgb(231, 233, 234);width:100%;
+    padding-left: 20px;height:30px;line-height: 30px;
+}
+
+#menuFrame{
+    min-height:700px;
+}
+

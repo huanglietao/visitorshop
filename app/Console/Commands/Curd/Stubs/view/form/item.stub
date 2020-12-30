@@ -1,0 +1,11 @@
+        <div class="form-group row form-item">
+            <label style=" font-weight: normal" for="c-mch_name" class="control-label col-xs-12 col-sm-2">
+            <span style="color:red">*</span> #form_title#：</label>
+            <div class="col-xs-12 col-sm-10">
+                <div class="row">
+                    <input  id="#form_field#" class="form-control col-sm-5" name="#form_field#" type="text" value="{{$row['#form_field#']}}" placeholder="" data-rule="#form_title#:required">
+                    <span class="col-sm-7 color-6A6969"> 请补充此字段的限制规则。</span>
+                </div>
+                <span class="msg-box" style="position:static;" for="#form_field#"></span>
+            </div>
+        </div>

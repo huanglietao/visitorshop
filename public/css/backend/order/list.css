@@ -1,0 +1,996 @@
+*{padding: 0px; margin: 0}
+#main{
+    font-size: 12px;
+    padding: 25px;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    padding: 0
+}
+
+.nav_tab{
+    margin: 20px 0;
+}
+
+.order_status_search{
+    padding: 4px 8px;
+    display: block;
+    background:#ffffff;
+    color: #6A6969;
+    width: 98%;
+    height: 26px;
+}
+
+/*订单列表*/
+
+.search-data-num {
+    padding-top: 5px!important;
+    margin-left: 13px;
+    font-weight: normal;
+    color: #6A6969;
+    cursor: pointer;
+}
+
+.search-row{
+    margin-left: -3px;
+}
+
+@media(min-width:992px) and (max-width:1200px){
+    .duration-search-label{
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+        padding-left: 0;
+    }
+    .duration-search-label .search-time{
+        padding: 0;
+    }
+
+}
+@media(max-width:992px){
+    .first_o_group{
+        margin-bottom: 16px !important;
+    }
+
+}
+
+.checkall{
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.o_checkall-text{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.o_spacing{
+    height: 10px !important;
+}
+
+.o_attr_goods{
+    width: 25%;
+}
+
+.o_attr_price{
+    width:10%;
+}
+
+.o_attr_num{
+    width:8%;
+}
+
+.o_attr_sale{
+    width:10%;
+}
+
+.o_attr_end{
+}
+
+.o_attr_other{
+}
+
+.checkedres {
+    width:25px;
+    margin-left: 10px
+}
+
+.o_first_span{
+    margin-left: 15px;
+}
+
+.o_next_span{
+    margin-right: 40px;
+    display: inline-block;
+}
+
+@media(max-width:1150px){
+    .o_next_span{
+        margin-right: 20px;
+    }
+
+}
+@media(max-width:1000px){
+    .o_next_span{
+        margin-right: 10px;
+    }
+}
+
+.data-text {
+    color: #101010;
+}
+
+.data-img{
+    width: 15px;
+    margin-left: 5px;
+    margin-top: -3px;
+    cursor: pointer
+}
+
+.o_list_tr{
+    background-color: #F0F2F5;
+    /*  border: 1px solid #BBBBBB !important;*/
+    height:40px !important;
+    margin-top: 10px;
+}
+
+.o_list_tr:hover{
+    background-color: #F0F2F5 !important;
+}
+
+.o_works_info {
+    margin: 10px 5px;
+    text-align: left;
+    display: flex;
+}
+
+.o_works_img{
+    vertical-align: middle!important;
+}
+
+.o_works_img img{
+    width: 80px;
+    height:80px;
+}
+
+.o_works_detail{
+    margin: auto 10px auto;
+    vertical-align: middle!important;
+}
+
+.o_works_name{
+    font-size: 12px;
+    color: #101010
+}
+
+.o_works_spec {
+    font-size: 12px;
+    color: #91959A;
+    line-height: 2!important;
+    margin-bottom: 0 !important;
+}
+
+.o_attr{
+    color: #101010;
+    /*vertical-align: super;*/
+    /*padding: 10px 5px;*/
+}
+
+.o_attr p {
+    line-height: 2
+}
+
+.o_attr_other{
+    width: 13%
+}
+
+.o_logistics{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2
+}
+.o_attr_logistics{
+    width: 15%;
+}
+
+.o-car img{
+    width: 25px;
+}
+
+.o_logistics a{
+    color: #3F51B5 !important;
+    text-decoration: underline !important;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.o_real_price{
+    font-weight: bold
+}
+
+.o_attr_operate a{
+    width: 13%;
+    color: #3F51B5 !important;
+    cursor: pointer;
+}
+
+.o_attr_operate a:hover{
+    cursor: pointer;
+    color: rgb(13, 46, 231)!important;
+    text-decoration: underline!important;
+}
+
+.o_list_tr_hide{
+    display: none;
+}
+.checkall
+{
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.o_checkall-text{
+    display: inline-block;
+    margin-right: 5px;
+}
+.check{
+    float: left;
+    font-size: 12px;
+    margin: 13px 0 0 109px;
+    vertical-align:middle;
+    color: rgba(106, 105, 105, 1);
+}
+
+.checkbox+label {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 11%;
+    border: 2px solid #ccc;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked+label {
+    border-radius: 11%;
+    border: 2px solid #5677fc;
+    background: #5677fc;
+
+}
+
+.checkbox:checked+label:after {
+    padding-left: 2px;
+    color: white;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 2px;
+    width: 10px;/*设置√的高度，就是√的右半部分*/
+    height: 6px;/*设置√的高度，就是√的左半部分*/
+    content: '';/*必设属性，不设不生效*/
+    border-bottom: 2px solid white;/*设置√的颜色*/
+    border-left: 2px solid white;/*设置√的颜色*/
+    box-sizing: border-box;/*宽和高只有13*6，设置的下边框和左边框不会撑大宽和高*/
+    transform: rotate(-46deg);/*旋转成一个√√*/
+}
+
+#all{
+    display: none !important;
+}
+
+.main-search .control-label {
+    padding-top: 5px !important;
+}
+
+.search-time{
+    padding: 4px 8px;
+    display: block;
+    color: #6A6969;
+    height: 26px;
+    background:#ffffff;
+
+}
+.order_status_search{
+    padding: 4px 8px;
+    display: block;
+    background:#ffffff;
+    color: #6A6969;
+    width: 98%;
+    height: 26px;
+}
+
+.tbl-content tr:hover{
+    background: none;
+}
+
+.td_border{
+    vertical-align: middle;
+    border-left: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+}
+
+.o_attr_operate{
+    width: 16%;
+}
+
+/*订单列表 end*/
+
+/*订单详情 start*/
+.d_step{
+    width: 100%;
+    margin: 80px 0 80px 0;
+}
+
+.d_column{
+    margin: 0 5% 0 5%;
+    height: 10px;
+    background: #bbb;
+    display: flex;
+    position: relative;
+}
+
+.d_logistic_status{
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    font-size: 14px;
+    left: -15px;
+    word-break: keep-all;
+}
+
+.d_logistic_time{
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    font-size: 12px;
+    /*   margin-left: -60px;*/
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #6A6969;
+
+}
+.d_logistic_time1{
+    left: -3%;
+}
+
+.d_logistic_time2{
+    left: 22%
+}
+
+.d_logistic_time3{
+    left: 47%
+}
+
+.d_logistic_time4{
+    left: 72%
+}
+
+.d_logistic_time5{
+    left: 97%
+}
+
+@media(max-width:1435px){
+    .d_logistic_time1{
+        left: -4%;
+    }
+
+    .d_logistic_time2{
+        left: 21%
+    }
+
+    .d_logistic_time3{
+        left: 46%
+    }
+
+    .d_logistic_time4{
+        left: 71%
+    }
+
+    .d_logistic_time5{
+        left: 96%
+    }
+}
+@media(max-width:1235px){
+    .d_logistic_time1{
+        left: -5%;
+    }
+
+    .d_logistic_time2{
+        left: 20%
+    }
+
+    .d_logistic_time3{
+        left: 45%
+    }
+
+    .d_logistic_time4{
+        left: 70%
+    }
+
+    .d_logistic_time5{
+        left: 95%
+    }
+}
+@media(max-width:992px){
+    .dis_group{
+        display: none;
+    }
+}
+
+
+/*hlt*/
+
+.d_check{
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.d_step_c_circle{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 21px;
+    color: #fff;
+    border-radius: 50%;
+    background: #bbb;
+    position: absolute;
+    top: -20px;
+}
+
+.d_step_circle1{
+    left: -1%;
+}
+
+.d_step_circle2{
+    left: 24%;
+}
+
+.d_step_circle3{
+    left: 49%;
+}
+
+.d_step_circle4{
+    left: 74%;
+}
+
+.d_step_circle5{
+    left: 99%;
+}
+
+
+
+.d_small_active_circle {
+    z-index: 3;
+    width: 35px;
+    height: 35px;
+    background: #259B24;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 8px;
+    top: 7px;
+    text-align: center;
+    line-height: 32px !important;
+    font-weight: bold !important;
+    font-size: 21px !important;
+    color: #fff !important;
+}
+
+.active_line{
+    background: #259B24;
+    height: 6px;
+    position: absolute;
+    top: 24%;
+    z-index: 2;
+    left: 1%;
+}
+
+.line1{
+    width: 25%;
+}
+
+.line2{
+    width: 25%;
+    left: 26%;
+}
+
+.line3{
+    width: 25%;
+    left: 51%;
+}
+
+.line4{
+    width: 25%;
+    left: 76%;
+}
+
+.d_well {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    padding: 7px;
+    margin-top: 20px;
+}
+
+.d_well-font{
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.d_well-img-c img{
+    margin-top: -4px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+.d_o_info_line{
+    display: flex;
+}
+
+.d_o_info_item {
+    width: 100%;
+}
+
+.d_o_info_item_attr{
+    font-weight: normal !important;
+    color: #6A6969;
+}
+
+.d_o_info_item_val{
+    font-weight: 400;
+    color: #0c0c0c;
+    white-space:nowrap;
+}
+
+.d_o_info_item_z{
+    text-align: right!important;
+}
+
+.o_logistic_info{
+    padding-left: 10px;
+}
+
+.fa-archive {
+    color: #3F51B5;
+    width: 16px;
+
+}
+
+#d_table{
+    border-bottom: 1px solid #f5f5f5;
+    border-left: 1px solid #f5f5f5;
+
+}
+
+.d_table-head td{
+    font-weight: bold;
+}
+
+#d_table td{
+    border-right: 1px solid #f5f5f5;
+}
+
+.d_o_attr_goods{
+    width: 25%;
+    border-top: 1px solid #f5f5f5 !important;
+}
+
+.d_o_works_info {
+    margin: 10px 5px;
+    text-align: left;
+    display: flex;
+}
+
+.d_o_works_img{
+    vertical-align: middle!important;
+}
+
+.d_o_works_img img{
+    width: 80px;
+    height:80px;
+}
+
+.d_o_works_detail{
+    margin: auto 10px auto;
+    vertical-align: middle!important;
+}
+
+.d_o_works_name{
+    font-size: 12px;
+    color: #101010
+}
+
+.d_o_works_pnum{
+    /*width: 80%;*/
+    font-size: 12px;
+    color: #91959A;
+    line-height: 2!important;
+}
+
+.d_d_o_works_spec_info{
+    width: 20%;
+    /* border-top: 1px solid #bbb !important;*/
+}
+
+.d_o_works_spec {
+    width: 80%;
+    font-size: 12px;
+    color: #91959A !important;
+    line-height: 2!important;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.d_o_attr{
+    border-top: 1px solid #f5f5f5 !important;
+    color: #101010;
+    vertical-align: super;
+    padding: 10px 5px;
+}
+
+.d_info_item_attrd{
+    width: 25%;
+    white-space: nowrap;
+}
+
+@media(max-width:1435px){
+    .d_o_info_item .form-group{
+        padding: 0 !important;
+    }
+    .col-lg-4{
+        padding: 0 !important;
+    }
+}
+
+.d_o_attr_sn{
+    width: 10%;
+}
+
+.d_o_attr_price{
+    width: 10%;
+}
+
+.d_o_attr_num{
+    width: 5%;
+}
+
+.d_o_attr_sale{
+    width: 10%;
+}
+
+.d_o_attr_weight{
+    width: 5%;
+}
+
+.d_o_attr_count{
+    width: 5%;
+}
+
+.d_o_attr_other{
+    position: relative;
+    width: 10%;
+}
+
+.fa-credit-card-alt{
+    color: #3F51B5;
+    width: 16px;
+}
+
+.o_info_compute{
+    color: #6A6969;
+    position: absolute;
+    right: 0;
+}
+
+.d_o_info_operate{
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.d_footer-tips{
+    color: #E51c23;
+    margin: 20px auto 0 auto;
+    line-height: 2;
+}
+
+.double-d{
+    width: 30px;
+    height: 20px;
+    border: 1px solid #3F51B5;
+    position: absolute;
+    right: 15px;
+    bottom: -2px;
+    cursor: pointer;
+}
+
+.tips-modal{
+    white-space: initial;
+}
+
+
+
+.double-d img{
+    width: 18px;
+    vertical-align: top;
+}
+
+.d_transition{
+    /*border-top: 2px dashed #1E9FFF;*/
+
+}
+
+.d_children_goods{
+    margin: 0 15px 0 15px;
+    border: 1px dashed #3F51B5;
+    padding-bottom: 5px;
+    display: flex;
+
+}
+
+.o_cg_pnum{
+    color: #6A6969;
+}
+
+.d_cg_p{
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_cg_nickname{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_cg_supplier{
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_cg_compound{
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_cg_examine{
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.d_cg_manuscript{
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d_cg_examine a{
+    text-decoration: underline;
+}
+.btn-operat{
+    border: 1px solid #3F51B5;
+    color: #3F51B5;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+/*.btn:hover {*/
+    /*background-color: #ff8733 !important;*/
+    /*color: #ffffff !important;*/
+/*}*/
+
+.d_o_info_invoice-left{
+    text-align: right;
+    color: #6A6969;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.d_o_info_invoice-right{
+    text-align: left;
+    color: #0c0c0c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.d_o_info_invoice{
+    border-bottom: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+.d_o_info_right{
+    border-bottom: 1px solid #f5f5f5;
+    display: flex;
+    color: #797777;
+    padding-bottom: 20px;
+}
+.d_o_info_right_content{
+    width: 14%;
+    padding-left: 10px;
+}
+.d_o_info_right_content_top{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.d_o_info_right_content_top_span{
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px
+}
+.d_o_info_right_content_bottom{
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+.d_o_info_right_content_two{
+    width: 14%;display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10px;
+}
+.d_o_info_right_content_two_row{
+    /*margin-bottom: 10px;*/
+}
+.d_o_info_right_content_two_text{
+    margin-bottom: 2px;
+}
+.d_o_info_right_content_three{
+    width: 16%;
+    color: #797777;
+    padding-left: 10px;
+    text-align: center
+}
+.d_o_info_right_content_three_text{
+    margin-bottom: 8px;
+}
+.d_o_info_right_content_three_amount{
+    color: red;
+    font-size: 16px;
+}
+.d_o_info_right_content_three_texts{
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+.d_o_info_right_content_three_amounts{
+    color: red;
+    font-size: 16px;
+}
+.fa-list-ul{
+    color: #3F51B5;
+    width: 16px;
+}
+.log_content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.log_content_first{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #3F51B5;
+    border-radius: 50%;
+    float: right;
+}
+.log_contents{
+    color: #797777;
+}
+.log_contents_first{
+    display: flex;
+}
+.log_contents_first_first{
+    width: 20%;
+}
+.log_contents_first_two{
+    width: 14%;
+    text-align: left;
+    margin-right: 3%;
+}
+.log_line{
+    padding-right: 12px;
+}
+.log_line_first{
+    width: 10px;
+    height: 15px;
+    border-right: 1px dashed #91959A;
+    float: right;
+}
+.log{
+    margin-bottom: 40px;
+}
+.btn-operat a:hover{
+    color: #101010 !important;
+}
+/*订单详情 end*/
+
+
+/*订单售后 start*/
+.s_info_span{
+    font-weight: normal;
+}
+.s_info_content{
+    margin-bottom: 12px;
+}
+.s_info_content_left{
+    text-align: right;
+    color: #6A6969
+}
+.fa-stop-circle-o{
+    color: #3F51B5;
+    width: 16px;
+}
+.handle_type{
+    display:none;
+}
+.display_control{
+    display:none;
+}
+/*订单售后 end*/
+
+/*换货单 start*/
+.exc_form_title{
+    width: 97% !important;
+    margin: 0 auto;
+}
+.exc_form_info_content{
+    color: #6A6969;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.exc_form_info_content_first{
+    text-align: right;
+}
+.exc_form_info_content_two{
+    color: #0c0c0c;
+    padding-left: 10px !important;
+}
+/*换货单 end*/
+
+/*物流跟踪 start*/
+.logistics_row{
+    width: 100%;
+}
+.logistics_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logistics_circle{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #3F51B5;
+    border-radius: 50%;
+}
+.logistics_line{
+    width: 10px;
+    height: 20px;
+    border-right: 1px dotted #3F51B5;
+    margin-right: 10px;
+}
+.logistics_text{
+    display: flex;
+    flex-direction: column
+}
+.logistics_null{
+    margin: 0 auto;
+}
+.logistics_now{
+    background-color: #3F51B5
+}
+/*物流跟踪 end*/
+
+

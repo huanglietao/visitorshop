@@ -1,0 +1,52 @@
+/* 模板的规格参数  */
+.btn-default {background-color: #f4f4f4;
+    color: #444;
+    border-color: #ddd;
+    margin-left: 3% !important;
+    height: 30px;
+}
+/*规格参数表格样式 */
+.table-striped{
+    font-size: small;
+}
+.spec-table{
+    padding: 10px;
+}
+.table-striped tr td{
+    padding: 5px;
+    border-top:1px solid #f4f4f4;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:  #f9f9f9 !important;
+}
+.odd{
+    background-color:  #f9f9f9 !important;
+}
+.table-striped tbody tr>td:first-child{
+    padding-right:4%;
+}
+.table-striped tbody tr>td:nth-child(even)
+{
+    padding-left:8%;
+}
+@media screen and (max-width: 1300px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .btn-default {
+        margin-left: 1% !important;
+    }
+}
+/*子页规格参数表格样式 */
+.temp-page-spec{
+    width: 60%;
+    border: 1px solid #d2d6de;
+}
+.page-table{
+    font-size: 12px !important;
+}
+.page-table tr>td:nth-child(even)
+{
+    padding-left:4% !important;
+}
+
+.table-striped tr{height:30px}
+.table-striped tr td{width:100px;}
+

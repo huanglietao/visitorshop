@@ -1,0 +1,1223 @@
+/*资金账务Tab栏样式 start*/
+.tab a {
+    color: rgb(48, 49, 51);
+    text-decoration: none;
+}
+
+.tab a:hover {
+    color: rgb(48, 49, 51);
+}
+
+ul {
+    list-style: none;
+}
+
+.father {
+    width: 100%;
+}
+
+.top {
+    height: 42px;
+    border-bottom: 1px solid rgb(63, 81, 181);
+    font-size: 14px;
+}
+
+.tabs {
+    height: 40px;
+    border-left: 1px solid rgb(220, 223, 230);
+    border-bottom: 0 none;
+    float: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab {
+    float: left;
+    position: relative;
+    background-color: rgb(240, 242, 245);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid rgb(220, 223, 230);
+}
+
+li.tabCurrent {
+    background-color: #fff;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(63, 81, 181);
+    border-radius: 5px 0px 0 0;
+}
+
+li.tabCurrent a {
+    line-height: 40px;
+    padding: 0 13px;
+    color: rgb(63, 81, 181);
+}
+
+li.tabCurrent a:hover {
+    color: rgb(63, 81, 181);
+}
+
+.tab a {
+    display: block;
+    padding: 0 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.tab .line {
+    height: 40px;
+    border-left: 1px solid rgb(220, 223, 230);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.goodsDetail {
+    width: 100%;
+    height: auto;
+    border-top: 0 none;
+    display: none;
+}
+
+div.goodsShow {
+    display: block;
+}
+/*资金账务Tab栏样式 end*/
+
+/*收缩栏样式 start*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.subNavBox {
+    width: 100%;
+    margin-top: 20px;
+    /*border: solid 1px #e5e3da;*/
+    border: 1px solid rgb(243, 244, 247);
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+}
+
+.subNav {
+    height: 46px;
+    /*border-bottom: solid 1px #bbb;*/
+    border-bottom: 1px solid #bbbbbb73;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 46px;
+}
+
+.currentDd {
+}
+
+.currentDt {
+}
+
+.navContent {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.navContent li {
+    /*border-bottom: 1px solid #bbb;*/
+    border-bottom: 1px solid #bbbbbb3b;
+    height: 49px;
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 49px;
+}
+
+.navContent li span {
+    display: block;
+    height: 42px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 49px;
+    color: rgba(0, 0, 0, 0.65);
+}
+/*收缩栏样式 end*/
+
+/*账户充值Tab样式 start*/
+.recharge-tab a {
+    color: rgb(48, 49, 51);
+    text-decoration: none;
+}
+
+.recharge-tab a:hover {
+    color: rgb(48, 49, 51);
+}
+
+.recharge-father {
+    width: 100%;
+}
+
+.recharge-top {
+    height: 52px;
+    /*border-bottom: 1px solid #7594ea;*/
+    border-bottom: 1px solid rgb(63, 81, 181);
+    font-size: 14px;
+}
+
+.recharge-tabs {
+    height: 50px;
+    border-top: 1px solid rgb(220, 223, 230);
+    border-left: 1px solid rgb(220, 223, 230);
+    border-bottom: 0 none;
+    float: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.recharge-tab {
+    float: left;
+    position: relative;
+    background-color: rgb(240, 242, 245);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+li.recharge-tabCurrent {
+    background-color: #fff;
+    height: 51px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border-bottom: 1px solid #bbb;*/
+    border-bottom: 1px solid rgb(63, 81, 181);
+    border-radius: 5px 5px 0 0;
+}
+
+li.recharge-tabCurrent a {
+    line-height: 50px;
+    padding: 0 13px;
+    color: rgb(63, 81, 181);
+}
+
+li.recharge-tabCurrent a:hover {
+    color: rgb(63, 81, 181);
+}
+
+.recharge-tab a {
+    display: block;
+    padding: 0 14px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.recharge-tab .recharge-line {
+    height: 50px;
+    border-left: 1px solid rgb(220, 223, 230);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.recharge-goodsDetail {
+    width: 100%;
+    /*border: 1px solid #bbb;*/
+    border-top: 0 none;
+    display: none;
+}
+
+div.recharge-goodsShow {
+    display: block;
+}
+/*账户充值Tab样式 end*/
+
+/*销售分析样式 start*/
+#statistics-view {
+    width: 100%;
+}
+
+/*日期组件自适应css start*/
+.search-row {
+    margin-left: -3px;
+}
+
+.main-search .control-label {
+    padding-top: 5px !important;
+}
+
+.search-time {
+    padding: 4px 8px;
+    display: block;
+    color: #6A6969;
+    height: 26px;
+    background: #ffffff;
+}
+
+.order_status_search {
+    padding: 4px 8px;
+    display: block;
+    background: #ffffff;
+    color: #6A6969;
+    width: 98%;
+    height: 26px;
+}
+
+@media(min-width:992px) and (max-width:1200px) {
+    .duration-search-label {
+        flex: 0 0 16.666667%!important;
+        max-width: 16.666667%!important;
+        padding-left: 0!important;
+    }
+
+    .duration-search-label .search-time {
+        padding: 0!important;
+    }
+}
+/*日期组件css end*/
+
+/*统计数据css start*/
+.order_statistics_data {
+    width: 100%;
+    border-radius: 5px;
+    background: rgb(240, 242, 245);
+    margin-top: 20px;
+    display: flex;
+}
+
+.order_statistics_data_child {
+    width: 8%;
+    margin: 10px 1%;
+    padding-left: 1%;
+    white-space: nowrap;
+}
+
+.order_statistics_data_child p {
+    line-height: 2;
+    margin-bottom: 0!important;
+}
+
+.osdc_content_num {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.osdc_content_unit {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.osdc_content_blue {
+    color: #3F51B5;
+}
+
+.osdc_content_gray {
+    color: #797777;
+}
+/*统计数据css end*/
+.finance_order_checkbox_first_td {
+    color: #797777;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
+    width: 100px;
+    white-space: nowrap;
+}
+
+.btn-checkbox + label:before {
+    background: #fff;
+}
+/*销售分析样式 end*/
+
+/*图片预览样式 start*/
+#show_img >div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 3px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+
+#show_img img {
+    height: 100%;
+    width: 100%;
+}
+
+#show_img > div > span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 99999;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 15%;
+    color: white;
+    cursor: pointer;
+}
+
+#show_img > div > span:before {
+    content: '\2715 ';
+}
+/*图片预览样式 end*/
+
+/*统计图样式*/
+.detail{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.detail div span{
+    color: rgb(121, 119, 119);
+}
+
+.detail div div{
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(16, 16, 16);
+
+}
+
+.save{
+    line-height: 18px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/*自定义样式 start*/
+.accounts-one {
+    padding: 15px;
+}
+
+.accounts-two {
+    margin: 5px 0;
+    padding: 0
+}
+
+.accounts-three {
+    /*border: 1px solid #bbb;*/
+    border: 1px solid #bbbbbb61;
+    width: 100%;
+    height: 155px;
+    margin-top: 20px;
+    padding-top: 18px;
+}
+
+.accounts-four {
+    width: 96%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.accounts-five {
+    font-size: 14px;
+    color: rgb(16, 16, 16);
+}
+
+.accounts-six {
+    color: rgb(95, 93, 93);
+    cursor: pointer;
+}
+
+.accounts-seven {
+    width: 95%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.accounts-eight {
+    width: 40%;
+    height: 30px;
+    float: left;
+}
+
+.accounts-nine {
+    width: 50%;
+    height: 30px;
+    float: right
+}
+
+.accounts-ten {
+    font-size: 12px;
+    color: rgba(121, 119, 119, 1)
+}
+
+.accounts-eleven {
+    font-size: 12px;
+    color: rgb(0,0,0)
+}
+
+.accounts-twelve {
+    font-size: 12px;
+    color: rgba(121, 119, 119, 1);
+    margin-left: 80px;
+}
+
+.accounts-thirteen {
+    /*font-size: 12px;*/
+    /*color: rgb(0,0,0);*/
+    margin-left: 25px;
+    margin-right: 10px
+}
+
+.accounts-fourteen {
+    color: gray;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.accounts-fifteen {
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+}
+
+.accounts-sixteen {
+    width: 88px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.accounts-seventeen {
+    background-color: rgb(255, 152, 0) !important;
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 13px !important;
+}
+
+.accounts-seventeen:hover {
+    background-color: rgba(255, 152, 0, 0.84) !important;
+}
+
+.accounts-eighteen {
+    width: 75px;
+    height: 25px;
+    border: 1px solid #bbb;
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.accounts-nineteen {
+    width: 75px;
+    height: 25px;
+    background-color: rgb(63, 81, 181);
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+}
+
+.accounts-twenty {
+    width: 100%;
+    /*height: 156px;*/
+    margin-top: 20px;
+}
+
+.account-image {
+    width: 100%;
+    height: auto;
+}
+
+.accounts-twenty-one {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.accounts-twenty-two {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(245, 245, 245);
+    padding-top: 7px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.accounts-twenty-three {
+    color: #5677fc;
+    margin-right: 5px;
+}
+
+.accounts-twenty-four {
+    font-size: 14px;
+    color: rgb(16, 16, 16);
+}
+
+.accounts-twenty-five {
+    width: 45%;
+    height: auto;
+    float: left
+}
+
+.accounts-twenty-six {
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+    float: right;
+    margin-top: 5px;
+}
+
+.accounts-twenty-seven {
+    width: 11px;
+    display: inline-block
+}
+
+.accounts-twenty-eight {
+    margin-left: 20px;
+}
+
+.accounts-twenty-nine {
+    margin-left: 35px;
+}
+
+.accounts-thirty {
+    margin-left: 255px;
+}
+
+.accounts-thirty-one {
+    display: inline-block !important;
+}
+
+.accounts-thirty-two {
+    display: inline-block !important;
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 260px;
+}
+
+.accounts-thirty-three {
+    display: none;
+}
+
+.accounts-thirty-four {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.accounts-thirty-five {
+    font-size: 12px;
+    color: rgb(121, 119, 119);
+}
+
+.accounts-thirty-six {
+    width: 100%;
+    height: auto;
+    margin-top: 10px
+}
+
+.accounts-thirty-seven {
+    width: 48%;
+    height: auto;
+    float: right;
+}
+
+.recharge-one {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.recharge-two {
+    padding-top: 20px;
+}
+
+.recharge-three {
+    width: 65%;
+    height: 67px;
+    text-align: left;
+    margin: 0 auto;
+    font-family: SourceHanSansSC;
+}
+
+.recharge-four {
+    display: block;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.88)
+}
+
+.recharge-five {
+    display: block;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.88);
+    margin-top: 5px;
+}
+
+.recharge-six {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.recharge-seven {
+    width: 60%;
+    /*height: 600px;*/
+    height: auto;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.recharge-eight {
+    width: 100%;
+    height: 45px;
+}
+
+.recharge-nine {
+    width: 29%;
+    /*height: 45px;*/
+    float: left;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+    line-height: 35px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.recharge-ten {
+    color: red;
+    margin-right: 10px;
+}
+
+.recharge-eleven {
+    width: 71%;
+    height: 45px;
+    float: right
+}
+
+.recharge-twelve {
+    font-size: 12px !important;
+}
+
+.recharge-thirteen {
+    width: 100%;
+    height: 111px;
+}
+
+.recharge-fourteen {
+    width: 29%;
+    height: 100px;
+    float: left;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+    line-height: 108px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.recharge-fifteen {
+    width: 71%;
+    height: 111px;
+    float: left;
+    padding-top: 10px
+}
+
+.recharge-sixteen {
+    width: 30%;
+    /*height: 90px;*/
+    height: 75px;
+    border: 1px solid #bbb;
+    float: left;
+    margin-right: 5%;
+    /*padding-top: 28px;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.recharge-seventeen {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 13%;
+    margin-right: 10%;
+}
+
+.recharge-eighteen {
+    width: 100%;
+    height: auto;
+}
+
+.recharge-nineteen {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.recharge-twenty {
+    width: 30%;
+    /*height: 90px;*/
+    height: 75px;
+    border: 1px solid #bbb;
+    float: left;
+    margin-right: 5%;
+    /*padding-top: 23px;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharge-twenty-one {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 13%;
+    margin-right: 7%;
+}
+
+.recharge-twenty-two {
+    width: 30%;
+    /*height: 90px;*/
+    height: 75px;
+    border: 1px solid #bbb;
+    float: left;
+    /*padding-top: 23px;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharge-twenty-three {
+    width: 100%;
+    height: 110px;
+}
+
+.recharge-twenty-three-flag {
+    width: 100%;
+    height: 85px;
+}
+
+.recharge-twenty-four {
+    width: 29%;
+    height: 110px;
+    float: left;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+    line-height: 120px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.recharge-twenty-five {
+    width: 71%;
+    /*height: 110px;*/
+    float: left;
+}
+
+.recharge-twenty-six {
+    color: white;
+    font-size: 12px;
+    font-family: SourceHanSansSC;
+    display: block;
+    margin-left: 90px
+}
+
+.recharge-twenty-seven {
+    color: white;
+    font-size: 12px;
+    font-family: SourceHanSansSC;
+    display: block;
+    margin-left: 114px;
+    margin-top: 10px;
+}
+
+.recharge-twenty-eight {
+    width: 100%;
+    height: 110px;
+}
+
+.recharge-twenty-eight-same {
+    width: 100%;
+    height: 110px;
+}
+
+.recharge-twenty-nine {
+    width: 100%;
+    height: 108px;
+    border: 1px solid #bbb;
+    background-color: rgb(240, 242, 245)
+}
+
+.recharge-thirty {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: SourceHanSansSC;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.recharge-thirty-one {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: SourceHanSansSC;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+
+.recharge-thirty-two {
+    width: 100%;
+    height: 110px;
+    display: none;
+}
+
+.recharge-thirty-three {
+    width: 45%;
+    height: 108px;
+    float: left
+}
+
+.recharge-thirty-four {
+    width: 14%;
+    height: 85px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 9px;
+}
+
+.recharge-thirty-five {
+    width: 100%;
+    /*height: 45px;*/
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.recharge-thirty-six {
+    width: 71%;
+    height: 45px;
+    float: right;
+    padding-top: 2.5px
+}
+
+.recharge-thirty-seven {
+    width: 100%;
+    /*height: 120px;*/
+    margin-top: 15px;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+}
+
+.recharge-thirty-eight {
+    width: 29%;
+    height: 103px;
+    float: left;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+    line-height: 95px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.recharge-thirty-nine {
+    width: 71%;
+    /*height: 120px;*/
+    float: left;
+    position: relative;
+}
+
+.recharge-fourty {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.recharge-fourty-one {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer
+}
+
+.recharge-fourty-two {
+    position: absolute;
+    top: 11px;
+    left: 20%;
+    width: 60px;
+    height: 60px;
+    color: #bbb;
+    outline: 15px solid;
+    outline-offset: -44px;
+}
+
+.recharge-fourty-three {
+    position: absolute;
+    font-size: 12px;
+    color: rgba(0,0,0,0.65);
+    bottom: 15px;
+    left: 25%;
+    font-family: SourceHanSansSC;
+}
+
+.recharge-fourty-four {
+    /*float: left;*/
+    color: rgb(121, 119, 119);
+    /*margin-top: 35px;*/
+    /*margin-left: 20px;*/
+    position: absolute;
+    left: 120px;
+    top: 38px;
+}
+
+.recharge-fourty-five {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(63, 81, 181);
+    border-radius: 3px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.recharge-fourty-six {
+    width: 40%;
+    /*height: 600px;*/
+    height: auto;
+    float: right;
+}
+
+.recharge-fourty-seven {
+    width: 333px;
+    height: 333px;
+    margin-top: 19px;
+}
+
+.recharge-fourty-eight {
+    clear: both
+}
+
+.recharge-fourty-nine {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(0, 170, 238);
+    position: relative;
+    padding-top: 20px;
+}
+
+.recharge-fourty-nine i:nth-child(3) {
+    display: block;
+    position: absolute;
+    border-bottom: 45px solid #f90606;
+    border-right: 45px solid transparent;
+    width: 0px;
+    height: 0px;
+    top: 66px;
+    left: -2px;
+}
+
+.recharge-fourty-nine i:nth-child(4) {
+    display: block;
+    position: absolute;
+    border-top: 45px solid #f90606;
+    border-left: 45px solid transparent;
+    width: 0px;
+    height: 0px;
+    right: -2px;
+    top: -2px;
+}
+
+.recharge-fifty {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+}
+
+.recharge-fifty-one {
+    width: 71%;
+    height: 100px;
+    float: left;
+    padding-top: 10px
+}
+
+.recharge-fifty-two {
+    width: 30%;
+    height: 75px;
+    border: 1px solid #bbb;
+    float: left;
+    margin-right: 5%;
+    /*padding-top: 23px;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharge-fifty-three {
+    width: 30%;
+    height: 75px;
+    border: 1px solid #bbb;
+    float: left;
+    /*padding-top: 23px;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recharge-fifty-four {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.recharge-fifty-five {
+    width: 30%;
+}
+
+.recharge-fifty-six {
+    width: 60%;
+    padding-left: 10%;
+}
+
+.recharge-fifty-seven {
+    width: 29%;
+    float: left;
+    color: rgb(121, 119, 119);
+    font-size: 12px;
+    line-height: 130px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.recharge-fifty-eight {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.recharge-fifty-nine {
+    width: 71%;
+    height: 150px;
+    float: right
+}
+
+.recharge-sixty {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.account-recharge-one {
+    padding: 2px 8px;
+    display: block;
+    background: transparent!important;
+    border-radius: 8px;
+    color: #6A6969;
+}
+
+.account-recharge-two {
+    padding-top: 5px!important;
+    margin-left: 13px;
+    font-weight: normal;
+    color: rgba(106, 105, 105, 1);
+    cursor: pointer;
+    font-family: SourceHanSansSC;
+}
+
+.fa-calendar {
+    color: #a9a9a9;
+    position: absolute;
+    vertical-align: middle;
+    top: 31%;
+    right: 0;
+    padding-right: 13px;
+}
+
+.account-recharge-three {
+    padding: 4px 8px;
+    display: block;
+    background: transparent!important;
+    border-radius: 5px;
+    color: #6A6969;
+    width: 98%;
+}
+
+.account-recharge-four a{
+    color: rgb(63, 81, 181);
+    margin-right: 10px;
+    white-space: nowrap
+}
+
+.account-recharge-four a:hover{
+    color: rgb(13, 46, 231);
+    text-decoration: underline;
+}
+
+.account-recharge-five a{
+    color: rgb(63, 81, 181);
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.account-recharge-five a:hover{
+    color: rgba(63, 81, 181, 0.81);
+}
+/* 物流统计样式*/
+.gdp {
+    color: #3F51B5;
+    font-weight: bold;
+}
+
+.logi_detail {
+    color: rgb(63, 81, 181)
+}
+
+tr td .attr_buttom {
+    margin-bottom: 0px
+}
+
+tr td .attr_top {
+    margin-bottom: 5px !important;
+}
+
+@media(max-width:992px){
+    .first_o_group{
+        margin-bottom: 16px !important;
+    }
+
+}
+
+/*资金明细 start*/
+.fund-search-select {
+    width: 100%;
+    padding: 4px 8px;
+    display: block;
+    color: #6A6969;
+    height: 26px;
+    background: #ffffff;
+}
+.f_operate:hover{
+    cursor: pointer;
+    color: rgb(13, 46, 231)!important;
+    text-decoration: underline!important;
+}
+/*资金明细 end*/
+
+/*自定义样式 end*/

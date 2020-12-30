@@ -1,0 +1,4 @@
+                <div class="col-lg-4 form-group">
+                    @component('component/search/label_input',['label'=>'#feild_name#', 'inp_name' => '#feild_value#', 'inp_id' => '#feild_id#'])
+                    @endcomponent
+                </div>

@@ -1,0 +1,279 @@
+.navbar_F0F2F5 {
+    background-color:#F0F2F5 !important;
+}
+
+.logo-color{
+    background-color:#FFF !important;
+    color:black !important;
+}
+
+.menu-color{
+    background-color:#f1f2f6 !important;
+    color:#fff !important;
+}
+
+[class*=sidebar-dark] .brand-link {
+    color: rgba(255,255,255,.8);
+    border-bottom: 3px solid #3F51B5!important;
+}
+.sidebar-dark-primary .sidebar a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item.menu-open>.nav-link, .sidebar-dark-primary .nav-sidebar>.nav-item:hover>.nav-link {
+    color: black;!important;
+    /*background-color: rgba(255,255,255,.1);*/
+}
+
+.sidebar-dark-primary .nav-treeview>.nav-item>.nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.sidebar-dark-primary .nav-treeview>.nav-item>.nav-link:hover {
+    color: black;
+}
+.nav-link.active{
+    color: #fff !important;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:active, .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link:focus {
+    color: #222;
+}
+
+.nav-item ul{
+    background:#fff;!important;
+}
+.nav-treeview {
+    background:#fff;!important;
+}
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-treeview {
+    background: rgb(246, 246, 246);
+}
+.border-bottom{
+    border-bottom: 3px solid #3F51B5 !important;
+}
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active{
+    color: rgba(0, 0, 0, 1) !important;
+    background-color:#fff !important;
+}
+.nav-link.active{
+    box-shadow: none !important;
+}
+.nav-link{
+    border-radius: 0 !important;
+}
+.menu-lv-1 a{
+    padding-left: 48px;
+}
+ul li a.active{
+    padding-left: 45px;
+}
+.menu-default{
+    padding-left: 1rem !important;
+}
+.elevation-4{
+    box-shadow: none !important;
+}
+.nav-sidebar .nav-item > .nav-link{
+    margin-bottom: 8px !important;
+}
+.pub_version {
+    margin-left:10%;width:60%;height:25px;background:red;color:#fff;border-radius: 15px;line-height: 25px;text-align: center;overflow: hidden;
+}
+.sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active, .sidebar-dark-primary .nav-treeview>.nav-item>.nav-link.active:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color:#fff;
+    border-left: 3px solid rgb(63, 81, 181);
+}
+.nav-item p{
+    font-size: 12px;
+}
+
+/*通用操作提示框 start*/
+.explanation{
+    overflow:hidden;
+    width:100%;
+    border:1px dotted rgb(63, 81, 181);
+    min-height:50px;
+    position:relative;
+    border-radius: 6px;
+    padding:12px 15px
+}
+
+.explanation{
+    overflow:hidden;
+    width:100%;
+    border:1px dotted rgb(63, 81, 181);
+    min-height:50px;
+    position:relative;
+    border-radius: 6px;
+    padding:12px 15px
+}
+.explanation .ex_tit {
+    color: #62b3ff;
+    position: relative;
+    height: 20px;.
+margin-bottom: 10px;
+}
+.explanation .ex_tit .ex_icon {
+    background: url("../../images/extips.png") no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -4px;
+    left: 2px;
+}
+.explanation .ex_tit h4 {
+    font-weight: 400;
+    padding-left: 32px;
+    font-size: 14px;
+    /*float: left;*/
+    margin-top:4px;
+    color: rgba(0, 0, 0, 0.88);
+    font-family:SourceHanSansSC;
+}
+.explanation .ex_descrition{
+    margin-left: 30px;
+    color:#6A6969
+}
+.explanation #explanationBox{
+    width: 0;
+    height: 0;
+    border-top: 30px solid red;
+    border-left: 30px solid transparent;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+.explanation #explanationZoom{
+    color:#fff;
+    top:3px;
+    right:4px;
+    position:absolute;
+    cursor: pointer;
+}
+/*通用操作提示框 end*/
+
+/*通用搜索栏样式 start*/
+.btn-3F51B5 {
+    background-color: #3F51B5; !important;
+    border-color: #3F51B5;!important;
+    padding:3px 10px;!important;
+}
+.search-more-color{
+    color:#3F51B5;
+    cursor: pointer;
+}
+/*通用搜索栏样式 end*/
+
+/*弹出框样式 start*/
+.layui-layer-fast .layui-layer-title {
+    background:rgb(63, 81, 181)!important;
+    color: #fff!important;
+    border-bottom: none;
+}
+/*弹出框样式 end*/
+
+/* 内容列表切换状态样式  start*/
+.nav_operate_tab{
+    border-bottom: 1px solid rgba(63, 81, 181, 1);
+    height: 45px;
+    font-size: 14px;
+}
+
+.nav_status_current{
+    background-color: #fff;
+    color: rgb(63, 81, 181);
+}
+/* 内容列表切换状态样式  end*/
+
+
+
+.main-im{
+    position: fixed;
+    right: 18px;
+    top: 50%;
+    z-index: 100;
+
+}
+.main-im .open-im {
+    cursor: pointer;
+    width: 42px;
+    height: 133px;
+    background: url(../../images/home/open_im.png) no-repeat left top;
+    display: none;
+}
+.main-im .im_main {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background: #F9FAFB;
+}
+.main-im .close-im {
+    position: absolute;
+    right: 10px;
+    top: -12px;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+}
+.main-im .close-im a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../images/home/close_im.png) no-repeat left top;
+}
+.main-im .im_main .im-tel {
+    color: #000000;
+    text-align: center;
+    width: 109px;
+    height: 105px;
+    border-top: 1px solid #dddddd;
+}
+.main-im .qq-a {
+    display: block;
+    width: 106px;
+    height: 116px;
+    font-size: 14px;
+    color: #0484cd;
+    text-align: center;
+    position: relative;
+}
+
+.main-im .img-qq {
+    max-width: 80px;
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding-left: 6px;
+}
+.main-im .qq-a span {
+    bottom: 5px;
+    position: absolute;
+    width: 90px;
+    left: 10px;
+}
+.main-im .im_main .im-tel div {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.main-im .im_main .im-tel .tel-num {
+    font-family: Arial;
+    font-weight: bold;
+    color: #e66d15;
+}
+.main-im .im_main .im-tel div {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.main-im .im_main .im-tel .tel-num {
+    font-family: Arial;
+    font-weight: bold;
+    color: #e66d15;
+}

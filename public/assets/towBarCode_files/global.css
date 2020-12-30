@@ -1,0 +1,652 @@
+@charset "utf-8";
+/******************************
+全局样式 通用样式
+******************************/
+ @font-face {
+ 	font-family: 'icomoon';
+    src:  url('SYSstyle/fonts/icomoon.eot?e6gwcr');
+    src:  url('SYSstyle/fonts/icomoon.eot?e6gwcr#iefix') format('embedded-opentype'),
+    url('SYSstyle/fonts/icomoon.ttf?e6gwcr') format('truetype'),
+    url('SYSstyle/fonts/icomoon.woff?e6gwcr') format('woff'),
+    url('SYSstyle/fonts/icomoon.svg?e6gwcr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} 
+.classlist .operate{
+	font-family: 'icomoon';
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+a:hover, a:focus {
+	font-weight: bold;
+    text-decoration: none!important;
+}
+ol, ul {padding: 0!important;}
+input, select, textarea, .t_input {
+	display: inline-block;
+	padding: 6px 8px;
+	box-shadow: none!important;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color: #fff;
+	color: #3a4f5a!important;
+	border: 1px solid #d2d6de!important;
+}
+input, select, button, .t_input {height: 34px;}
+.t_input {
+	float: left;
+	overflow-x: auto;
+}
+input[type=button]:focus, input[type=text]:focus, select:focus, textarea:focus, .t_input:focus {
+	border-color: #297dfd!important;
+	box-shadow: 0px 0px 3px #297dfd!important;
+	transition: All .5s ease;
+}
+*:focus {outline: none;}/* 清除谷歌默认的获取焦点边框 */
+[contenteditable]:focus{box-shadow: 0px 0px 3px #297dfd;}/* div获取焦点边框 */
+input[type=checkbox], input[type=radio] {
+	width: 18px;
+	height: 18px;
+}
+input:disabled {
+	background-color:#f5f5f5;
+	color:#777!important;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    height: 18px;
+    margin-top: 3px;
+}
+.noEmptyInputBorder{ /* 新增 input有值变色  */
+	border:1px solid #297dfd!important;
+}
+
+.text_area {height: 80px;}
+
+.data_input{ /* 带有div的输入框样式 */
+	height: 34px!important;
+	line-height: 34px!important;
+}
+
+.input_none {
+	width: 42px;
+	padding: 0!important;
+	margin: 0!important;
+}
+
+/********** input、select、div下拉样式 **********/
+.scrollView {
+	display: flex;
+	position: fixed;
+	z-index: 100000000;
+	top: 28px;
+	left: 0px;
+	height: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.scrollContent {
+	width: 100%;
+	min-height: 24.8px;
+	border-radius: 3px;
+	z-index: 101;
+	overflow: hidden;/* 隐藏超出滚动内容区域的元素 */
+}
+.scrollContent:focus {border: 1px solid #8ab0ec;}
+.scrollTrack {
+	width: 5px;
+	min-height: 25px;
+	margin-left: -3px;
+	display: flex;
+	flex-direction: column;/* 竖着排列滚动条区域内的上下按钮、滑块等元素 */
+}
+.btnUp, .btnDown {height: 0px;}
+.scrollBar {
+	height: 25px;
+	border-radius: 3px;
+}
+.trackDown {flex-grow: 1;/* 让大幅度向下滚动点击区域占据排列完其他元素后剩下的所有区域 */}
+.ChsoeDiv {
+	cursor: pointer;
+	text-align: left;
+	padding: 3px 0 3px 6px;
+	overflow: hidden;/*内容超出后隐藏*/
+	text-overflow: ellipsis;/* 超出内容显示为省略号*/
+	white-space: nowrap;/*文本不进行换行*/
+}
+.itemActive {
+	background: #00008B;
+	color: #fff;
+}
+/*当拖动滑块时，给body元素加上该类，防止鼠标的拖动导致网页内容的选择操作*/
+.unselectable {
+	user-select: none;/* 当前版本的火狐（53）和Edge（15）不支持user-select标准属性，需要使用浏览器厂商前缀 */
+}
+.SearchContent {
+	float: left;
+	padding: 0;
+	border: 0;
+	border-radius: 3px;
+	position: relative;
+}
+.SearchInput {
+	padding: 7px 8px;
+	-webkit-appearance: none;
+	overflow: hidden;/* 内容超出后隐藏 */
+	text-overflow: ellipsis;/* 超出内容显示为省略号 */
+	white-space: nowrap;/* 文本不进行换行 */
+}
+.DownArrow {
+	display: block;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: solid;
+	position: absolute;
+	right: 8px;
+	top: 44%;
+}
+.SearchText {
+	width: 99.5%;
+	margin-top: 1px;
+	background-image: url(new_box/search_icon.png);
+	background-repeat: no-repeat;
+	background-position: right 8px;
+}
+
+/********** 通用样式 **********/
+.forcewrap {
+	position: relative;
+	table_layout: fixed;
+	text-overflow: clip;
+	white-space: nowrap;
+	width: 100%;
+}
+.clear {
+	clear: both;
+	line-height: 0;
+	height: 0;
+	font-size: 0;
+}
+.clearfix: after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {zoom: 1;}
+
+.float_left {float: left;}
+.float_right {float: right;}
+
+.align_left {text-align: left;}
+.align_center {text-align: center;}
+.align_right {text-align: right;}
+
+.display_none {display: none;}
+.display_block {display: block;}
+.display_inline_block {display: inline-block;}
+
+
+.padding_10 {padding: 10px;}
+.padding_15 {padding: 15px;}
+.padding_20 {padding: 20px;}
+
+.padding_t_b_10 {padding: 10px 0!important;}
+
+.padding_t_5 {padding-top: 5px!important;}
+.padding_t_10 {padding-top: 10px!important;}
+.padding_t_15 {padding-top: 15px!important;}
+.padding_t_20 {padding-top: 20px!important;}
+
+.padding_r_5 {padding-right: 5px!important;}
+.padding_r_10 {padding-right: 10px!important;}
+.padding_r_15 {padding-right: 15px!important;}
+.padding_r_20 {padding-right: 20px!important;}
+
+.padding_b_5 {padding-bottom: 5px!important;}
+.padding_b_10 {padding-bottom: 10px!important;}
+.padding_b_15 {padding-bottom: 15px!important;}
+.padding_b_20 {padding-bottom: 20px!important;}
+
+.padding_l_5 {padding-left: 5px!important;}
+.padding_l_10 {padding-left: 10px!important;}
+.padding_l_15 {padding-left: 15px!important;}
+.padding_l_20 {padding-left: 20px!important;}
+
+
+.margin_auto {margin: 0 auto;}
+.margin_10 {margin: 10px;}
+.margin_20 {margin: 20px;}
+
+.margin_t_b_10 {margin: 10px 0!important;}
+
+.margin_t_5 {margin-top: 5px!important;}
+.margin_t_10 {margin-top: 10px!important;}
+.margin_t_15 {margin-top: 15px!important;}
+.margin_t_20 {margin-top: 20px!important;}
+
+.margin_r_5 {margin-right: 5px!important;}
+.margin_r_10 {margin-right: 10px!important;}
+.margin_r_15 {margin-right: 15px!important;}
+.margin_r_20 {margin-right: 20px!important;}
+
+.margin_b_5 {margin-bottom: 5px!important;}
+.margin_b_10 {margin-bottom: 10px!important;}
+.margin_b_15 {margin-bottom: 15px!important;}
+.margin_b_20 {margin-bottom: 20px!important;}
+
+.margin_l_5 {margin-left: 5px!important;}
+.margin_l_10 {margin-left: 10px!important;}
+.margin_l_15 {margin-left: 15px!important;}
+.margin_l_20 {margin-left: 20px!important;}
+
+
+.overflow_x_auto {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.overflow_y_auto {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/********** 颜色 **********/
+.color1 {color: #ff9801!important;}/* 橙色 */
+.bg_color1 {background-color: #ff9801;}
+.line_color1 {border-bottom: 2px solid #ff9801;}
+
+.color2 {color: #4cb050!important;}/* 绿色 */
+.bg_color2 {background-color: #4cb050;}
+.line_color2 {border-bottom: 2px solid #4cb050;}
+
+.color3 {color: #00bcd5!important;}/* 天空蓝 */
+.bg_color3 {background-color: #00bcd5;}
+.line_color3 {border-bottom: 2px solid #00bcd5;}
+
+.color4 {color: #2196f3 !important;}/* 蓝色 */
+.color5 {color: #3f51b5 !important;}/* 藏蓝色 */ 
+.color6 {color: #972cb0 !important;}/* 紫色 */
+.color7 {color: #e91e63 !important;}/* 洋红 */
+.color8 {color: #f44336 !important;}/* 橘红 */
+
+
+/********** 宽度% **********/
+.width_100 {width: 100%;}
+.width_99 {width: 99%;}
+.width_98 {width: 98%;}
+.width_97 {width: 97%;}
+.width_96 {width: 96%;}
+.width_95 {width: 95%;}
+.width_94 {width: 94%;}
+.width_93 {width: 93%;}
+.width_92 {width: 92%;}
+.width_91 {width: 91%;}
+.width_90 {width: 90%;}
+
+.width_89 {width: 89%;}
+.width_88 {width: 88%;}
+.width_87 {width: 87%;}
+.width_86 {width: 86%;}
+.width_85 {width: 85%;}
+.width_84 {width: 84%;}
+.width_83 {width: 83%;}
+.width_82 {width: 82%;}
+.width_81 {width: 81%;}
+.width_80 {width: 80%;}
+
+.width_79 {width: 79%;}
+.width_78 {width: 78%;}
+.width_77 {width: 77%;}
+.width_76 {width: 76%;}
+.width_75 {width: 75%;}
+.width_74 {width: 74%;}
+.width_73 {width: 73%;}
+.width_72 {width: 72%;}
+.width_71 {width: 71%;}
+.width_70 {width: 70%;}
+
+.width_69 {width: 69%;}
+.width_68 {width: 68%;}
+.width_67 {width: 67%;}
+.width_66 {width: 66%;}
+.width_65 {width: 65%;}
+.width_64 {width: 64%;}
+.width_63 {width: 63%;}
+.width_62 {width: 62%;}
+.width_61 {width: 61%;}
+.width_60 {width: 60%;}
+
+.width_59 {width: 59%;}
+.width_58 {width: 58%;}
+.width_57 {width: 57%;}
+.width_56 {width: 56%;}
+.width_55 {width: 55%;}
+.width_54 {width: 54%;}
+.width_53 {width: 53%;}
+.width_52 {width: 52%;}
+.width_51 {width: 51%;}
+.width_50 {width: 50%;}
+
+.width_49 {width: 49%;}
+.width_48 {width: 48%;}
+.width_47 {width: 47%;}
+.width_46 {width: 46%;}
+.width_45 {width: 45%;}
+.width_44 {width: 44%;}
+.width_43 {width: 43%;}
+.width_42 {width: 42%;}
+.width_41 {width: 41%;}
+.width_40 {width: 40%;}
+
+.width_39 {width: 39%;}
+.width_38 {width: 38%;}
+.width_37 {width: 37%;}
+.width_36 {width: 36%;}
+.width_35 {width: 35%;}
+.width_34 {width: 34%;}
+.width_33 {width: 33%;}
+.width_32 {width: 32%;}
+.width_31 {width: 31%;}
+.width_30 {width: 30%;}
+
+.width_29 {width: 29%;}
+.width_28 {width: 28%;}
+.width_27 {width: 27%;}
+.width_26 {width: 26%;}
+.width_25 {width: 25%;}
+.width_24 {width: 24%;}
+.width_23 {width: 23%;}
+.width_22 {width: 22%;}
+.width_21 {width: 21%;}
+.width_20 {width: 20%;}
+
+.width_19 {width: 19%;}
+.width_18 {width: 18%;}
+.width_17 {width: 17%;}
+.width_16 {width: 16%;}
+.width_15 {width: 15%;}
+.width_14 {width: 14%;}
+.width_13 {width: 13%;}
+.width_12 {width: 12%;}
+.width_11 {width: 11%;}
+.width_10 {width: 10%;}
+
+.width_9 {width: 9%;}
+.width_8 {width: 8%;}
+.width_7 {width: 7%;}
+.width_6 {width: 6%;}
+.width_5 {width: 5%;}
+.width_4 {width: 4%;}
+.width_3 {width: 3%;}
+.width_2 {width: 2%;}
+.width_1 {width: 1%;}
+
+/********** 宽度 固定 **********/
+.width_f_605 {width: 605px;}
+.width_f_580 {width: 580px;}
+.width_f_480 {width: 480px;}
+.width_f_420 {width: 420px;}
+.width_f_415 {width: 415px;}
+.width_f_360 {width: 360px;}
+.width_f_320 {width: 320px;}
+.width_f_300 {width: 300px;}
+.width_f_260 {width: 260px;}
+.width_f_240 {width: 240px;}
+.width_f_200 {width: 200px;}
+.width_f_160 {width: 160px;}
+.width_f_120 {width: 120px;}
+.width_f_100 {width: 100px;}
+.width_f_80 {width: 80px;}
+.width_f_50 {width: 50px;}
+.width_f_5 {width: 5px;}
+
+/********** 高度% **********/
+.height_100 {height: 100%;}
+.height_50 {height: 50%;}
+
+/********** 高度 固定 **********/
+.height_f_460 {height: 460px;}
+.height_f_400 {height: 400px;}
+.height_f_360 {height: 360px;}
+.height_f_320 {height: 320px;}
+.height_f_295 {height: 295px;}
+.height_f_220 {height: 220px;}
+.height_f_180 {height: 180px;}
+.height_f_150 {height: 150px;}
+.height_f_110 {height: 110px;}
+.height_f_100 {height: 100px;}
+.height_f_65 {height: 65px;}
+.height_f_58 {height: 58px;}
+.height_f_30 {height: 30px;}
+
+.zhezhao {
+	width: 100%;
+	height: 100%;
+	background: none;
+	position: absolute;
+	top: 85px;
+	left: 0;
+	z-index: 9999;
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+
+.t_input {overflow: hidden;}
+.SearchInput {padding: 0px 10px;}
+
+}
+.move_color:hover{
+	color:red;
+}
+
+.divTsCss .icommon{
+	 font-family: 'icomoon' !important;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+}
+.divTsCss{
+	 font-family: 'icomoon' !important;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+}
+
+
+/********** 固定底部样式 start **********/
+.ScrollFixed {
+	position:fixed; bottom:0px; left:11px; right:11px; padding-bottom: 5px;
+	border-top: 1px solid #d2dae2; background-color: #fff;
+	z-index: 10;
+}
+/********** 固定底部样式 start **********/
+
+/********** 开关 start **********/
+.tdtm_box {
+	display: inline-block;
+	height: 22px; padding-top: 6px;
+}
+.switch {display: none;}
+.txt_con {
+	float: left;
+	height: 22px; padding-top: 3px; padding-right: 6px;
+	color: #aaa;
+}
+label.label_switch {
+	display: block; position: relative;
+	width: 40px; height: 22px; padding: 1px; margin-bottom: 0px;
+	border-radius: 24px; background-color: #eee; vertical-align: top;
+	cursor: pointer;
+	-webkit-user-select: none;
+}
+label.label_switch:before{
+	content: '';
+	display: block;
+	height: 22px;
+	border-radius: 24px; background-color: #ccc;
+	-webkit-transform: scale(1, 1);
+	-webkit-transition: all 0.3s ease;
+}
+label.label_switch:after{
+	content: '';
+	position: absolute; top: 50%; left: 50%;
+	width: 22px; height: 22px; margin-top: -11px; margin-left: -11px; 
+	border-radius: 22px; background-color: white; box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.08);
+	-webkit-transform: translateX(-9px);
+	-webkit-transition: all 0.3s ease;
+}
+.switch:checked ~label.label_switch:after {
+	-webkit-transform: translateX(9px);
+}
+
+.switch:checked ~label.label_switch:before {
+	background-color: #0f84f7;
+}
+/********** 开关 end **********/
+
+/********** 文本框开展项目下拉 添加项目代码 start **********/
+.myAddNewZd:first-child {
+	font-weight:bold;
+}
+.myAddNewZd {
+	display: inline-block;
+	margin-left: 2%;
+	white-space: nowrap; text-overflow: ellipsis; vertical-align: middle;
+    overflow: hidden;
+}
+.myAddNewZd > p {
+	display: initial;
+}
+.myAddNewZd > p {
+    display: inline-block;
+    margin-bottom: 0px;
+	white-space: nowrap; text-overflow: ellipsis;
+    overflow: hidden;
+}
+/********** 文本框开展项目下拉 添加项目代码 end **********/
+
+
+/********** tips提示 start **********/
+.lj-tipsWrap, .lj-in, .lj-close {
+	display: inline-block;
+} 
+.lj-tipsWrap {
+	padding: 16px; background-color: #fff; border: 1px solid #4caf50; box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+	line-height: 1.5em; text-align: left;
+	position: absolute!important; z-index: 99999;
+} 
+.lj-in {
+	width: 0px; height: 0px;
+	position: absolute;
+	zoom: 1;
+	border: 6px dashed transparent;
+} 
+.lj-in span {
+	width: 0px; height: 0px;
+	zoom: 1;
+	overflow: hidden;
+} 
+.lj-close {
+	width: 10px ; height: 10px;
+	position: absolute; right: 0; top: 0;
+	text-decoration: none; color: #000; font-size: 14px; line-height: 0.5em;
+	overflow: hidden;
+} 
+.lj-close:hover {
+	color: #39F;
+} 
+.lj-top {
+	bottom: -13px; left: 2px;
+	border-top: 6px solid #4caf50;
+} 
+.lj-top span {
+	margin: -7px 0 0 -6px;
+	border-top: 6px solid #fff;
+} 
+.lj-right {
+	top: 2px; left: -13px;
+	border-right: 6px solid #4caf50;
+} 
+.lj-right span {
+	margin: -6px 0 0 -5px;
+	border-right: 6px solid #fff;
+} 
+.lj-bottom {
+	top: -13px; left: 2px;
+	border-bottom: 6px solid #4caf50;
+} 
+.lj-bottom span {
+	margin: -5px 0 0 -6px;
+	border-bottom: 6px solid #fff;
+} 
+.lj-left {
+	top: 2px; right: -13px;
+	border-left: 6px solid #4caf50;
+} 
+.lj-left span {
+	margin: -6px 0 0 -7px;
+	border-left: 6px solid #fff;
+} 
+.lj-left ~ .lj-close {left:0;} 
+
+.lj-tipsWrap {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: 2px 2px 3px #eee;
+	-moz-box-shadow: 2px 2px 3px #eee;
+}
+span.tipsBoxIcon {
+	display: inline-block;
+	width: 16px; height: 16px; line-height: 16px;
+	background-color: #4caf50; border-radius:50%;
+	font-family: Arial; font-size: 12px; color: #fff; text-align: center;
+}
+.tipsBoxHide_bg {
+	width: 100%; height: 96px; margin-top: -16px; margin-bottom: 10px;
+	background: url(new_box/tipsImg_idea.png) no-repeat center top;
+}
+.tipsBoxHide {}
+.tipsBoxHide > h3 {
+	margin: 0;
+	font-size: 16px!important; color: #aaa;
+}
+.tipsBoxHide > p {
+	margin: 0;
+	color: #666;
+}
+.tipsBoxHide > ul {
+	margin-top: 8px; padding-left: 20px!important;
+}
+.tipsBoxHide > ul li {
+	list-style-type: circle; line-height: 24px; color: #7a89a0;
+}
+/* 提示？定位 */
+.tipsBoxFixed-Angle {
+	position: absolute; top: 10px; right: 12px;
+}
+.tipsBoxFixed-Angle > span.tipsBoxIcon {
+	width: 24px; height: 24px; padding-top: 3px; padding-right: 6px;
+	text-align: right;
+	border-radius: inherit; border-bottom-left-radius: 24px; background-color: #4caf50;
+}
+.tipsBoxFixed-l1 {
+	position: absolute; top: 10px; left: 105px;
+}
+.tipsBoxFixed-l2 {
+	position: absolute; top: 15px; left: 90px;
+}
+.tipsBoxFixed-r {
+	position: absolute; top: 6px; right: 10px;
+}
+/********** tips提示 end **********/

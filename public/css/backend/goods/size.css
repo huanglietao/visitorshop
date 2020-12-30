@@ -1,0 +1,12 @@
+.attr-span{
+    padding-top: 5px;
+}
+.divbox{border:1px solid #D8D8D8; width:70%;margin:50px auto;position:relative}
+.maindiv{margin: 10px 0 0 75px ;}
+.borderbox{background: #fff;padding: 0 15px;position:absolute;top:-10px;left:82px;font-weight:bold;color:#000000}
+.box-label{font-weight: normal;}
+/*p{font-weight: bold;margin: 25px 0 0 75px}*/
+.boxin{width:50px}
+.maindiv input[type="radio"]{margin:0;position: relative;top: 3px;}
+.box-div{display: inline-block}
+.c_d_radio{min-width: 60px!important;}

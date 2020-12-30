@@ -1,0 +1,145 @@
+<!-- 搜索视图 -->
+@component('component/search')
+<form name="search-form" id="search-form" method="post">
+<div  class="search-line">
+    <div class="search-item row" style="" >
+        <div class="col-lg-4 form-group" style="text-align: left">
+            <div class="row" >
+                <div class="col-xl-4 col-md-3" style="text-align: right" >
+                    <label class="control-label" style="font-weight: normal">名称:</label>
+                </div>
+                <div class="col-xl-8 col-md-9">
+                    <input name="name" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 form-group">
+            <div class="row">
+                <div class="col-xl-4 col-md-3" style="text-align: right">
+                    <label class="control-label" style="font-weight: normal">名称1:</label>
+                </div>
+                <div class="col-xl-8 col-md-9">
+                    <input name="name1" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 form-group">
+            <div class="row">
+                <div class="col-xl-4 col-md-3" style="text-align: right">
+                    <label class="control-label" style="font-weight: normal">名称2:</label>
+                </div>
+                <div class="col-xl-8 col-md-9">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="display:  inline-block" class="btn-search">
+        <button class="btn  btn-primary btn-sm btn-3F51B5">搜索</button>
+        &nbsp;&nbsp;
+        <button class="btn  btn-default btn-sm " style=>重置</button>
+
+        &nbsp;&nbsp;
+        <span style="color:#3F51B5;cursor: pointer;" class="search-more">
+            更多搜索条件
+            &nbsp;
+            <i class="fa fa-chevron-down"></i>
+        </span>
+    </div>
+</div>
+
+@endcomponent
+
+@component('component/search_open')
+    <div style="display: flex;margin-top:5px" class="more search-line">
+        <div class="search-item row" style="width: 80%;" >
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">真实姓名:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">email:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">状态:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div style="display: flex;margin-top:5px" class="more search-line">
+        <div class="search-item row" style="width: 80%;" >
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">真实姓名:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">email:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 form-group">
+                <div class="row">
+                    <div class="col-xl-4 col-md-3" style="text-align: right">
+                        <label class="control-label" style="font-weight: normal">状态:</label>
+                    </div>
+                    <div class="col-xl-8 col-md-9">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="open-search-btn">
+        <button class="btn  btn-primary btn-sm btn-3F51B5" style="padding:3px 15px;font-size: 12px">搜索</button>
+        &nbsp;&nbsp;
+        <button class="btn  btn-default btn-sm " style="padding:3px 15px;font-size: 12px">重置</button>
+
+        &nbsp;&nbsp;
+        <span style="font-size: 12px;color:#3F51B5;cursor: pointer;" class="search-more-hide">
+            收起
+            &nbsp;
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </div>
+</form>
+@endcomponent
