@@ -30,8 +30,8 @@ return [
     'mch_super_username' => 'super_cr',
     'mch_super_password' => 'rTby7~!Tyls',
     'mongo'     => array(
-        'host' => 'mongodb://'.env('MONGO_USER').':'.env('MONGO_PWD').'@'.env('MONGO_HOST').':'.env('MONGO_PORT').'/'.env('MONGO_DATABASE'),
-        /*'host' => 'mongodb://'.env('MONGO_HOST').':'.env('MONGO_PORT').'/'.env('MONGO_DATABASE'),*/
+        /*'host' => 'mongodb://'.env('MONGO_USER').':'.env('MONGO_PWD').'@'.env('MONGO_HOST').':'.env('MONGO_PORT').'/'.env('MONGO_DATABASE'),*/
+        'host' => 'mongodb://'.env('MONGO_HOST').':'.env('MONGO_PORT').'/'.env('MONGO_DATABASE'),
         'db'   => env('MONGO_DATABASE')
     ),
     'image_path' => env("STATIC_PATH"),   //静态资资源文件
