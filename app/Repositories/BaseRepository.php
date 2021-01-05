@@ -96,6 +96,9 @@ abstract class BaseRepository {
         if(is_array($where)) {
             unset($where['limit']);
             unset($where['page']);
+            if (isset($where['s'])){
+                unset($where['s']);
+            }
             foreach ($where as $k=>$v) {
 
                 if(empty($v)&&$v!==0) {
