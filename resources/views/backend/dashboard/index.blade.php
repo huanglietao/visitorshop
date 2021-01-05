@@ -64,7 +64,7 @@
                         <span style="font-size: 12px;color: rgb(121, 119, 119);">昨日销售总额 &nbsp; ￥<span class="yesterday_amount">0.00</span> </span>
                     </div>
                 </a>
-                <a href="/#/order/list" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;">
                     <img style="width:40px;height: 40px;margin-right: 5%" src="../images/orders.png" />
                     <div style="display: inline-block;">
@@ -223,27 +223,27 @@
             </div>
 
             <div style="height: 100px;display: flex;justify-content: space-around;padding-top: 20px;">
-                <a href="/#/order/list?order_status={{ORDER_STATUS_WAIT_CONFIRM}}" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">未确认订单 (<span class="wait_confirm_count">0</span> )</span>
                 </a>
-                <a href="/#/order/list?order_status={{ORDER_STATUS_WAIT_PAY}}" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer;">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">待支付订单(<span class="wait_pay_count">0</span>)</span>
                 </a>
-                <a href="/#/order/list?order_status={{ORDER_STATUS_WAIT_PRODUCE}}" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">待生产订单(<span class="order_wait_produce">0</span>)</span>
                 </a>
-                <a href="/#/order/list?order_status={{ORDER_STATUS_WAIT_DELIVERY}}" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">待发货订单(<span class="wait_delivery_count">0</span>)</span>
                 </a>
-                <a href="/#/order/list?order_status={{ORDER_STATUS_WAIT_RECEIVE}}" target="_blank" style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;margin-right: 2%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">待确认收货订单(<span class="wait_receive_count">0</span>)</span>
                 </a>
-                <a href="/#/order/list?order_evaluate_status={{ORDER_UNEVALUATE}}" target="_blank" style="width: 20%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
+                <a style="width: 20%;border: 1px solid rgb(170, 170, 170);border-radius: 5px;display: table-cell;
                             display: -webkit-flex;justify-content: center;align-items: center;cursor: pointer">
                     <span style="font-weight: 400;font-size: 14px;color: rgb(121, 119, 119)">待评价订单(<span class="wait_evaluate_count">0</span>)</span>
                 </a>

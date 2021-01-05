@@ -117,12 +117,13 @@ $(function(){
                 var i = 0;
                 $.each(res.agent_sale_order,function (index,value) {
                     ++i;
-                    var html = '<span style="padding-left:10%;line-height: 2"><span class="agent_name">'+i+'.'+value.agent_name+'</span>: <span class="agent_order_count">'+value.sale_num+'</span> </span><br>';
+                    /*var html = '<span style="padding-left:10%;line-height: 2"><span class="agent_name">'+i+'.'+value.agent_name+'</span>: <span class="agent_order_count">'+value.sale_num+'</span> </span><br>';*/
+                    var html = '';
                     if (i<=3){
                         $(".left-sale").append(html);
                     }
                     if (i>3 && i<=6){
-                        $(".right-sale").append(html)
+                        $(".right-sale").append(html);
                     }
                 });
 
