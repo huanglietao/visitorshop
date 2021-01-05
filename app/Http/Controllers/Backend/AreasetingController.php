@@ -48,6 +48,7 @@ class AreasetingController extends BaseController
 
         $data=$this->repositories->logicData($post);
 
+
         $ret = $this->repositories->save($data);
         if ($ret) {
             return $this->jsonSuccess([]);
