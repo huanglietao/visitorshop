@@ -138,12 +138,6 @@
     @endif
     <div class="menu-hide"></div>
     <div class="menu-info">
-        @if($systemName!='scm')
-            <div class="menu-li ml-div-one"><i class="fa fa-user-o"></i><a href="@if($systemName=='oms' || $systemName=='dms')/#/auth/admin @else/#/auth/cmsadmin @endif" id="person">个人中心</a></div>
-        @endif
-        @if($systemName=='cms' || $systemName=='oms')
-            <div class="menu-li ml-div-two"><i class="fa fa-gear"></i><a href="/#/system/basics" id="setting">系统设置</a></div>
-        @endif
         <div class="menu-li ml-div-three logout"><i class="fa fa-sign-out"></i><a href="#">退出登录</a></div>
     </div>
 
