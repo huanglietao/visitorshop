@@ -44,7 +44,7 @@
             帮助中心 &nbsp;&nbsp;&nbsp;
             视频教程 &nbsp;&nbsp;&nbsp;
             功能更新 &nbsp;&nbsp;&nbsp;
-            @if($is_erp)<span class="erp_footer">天津长荣云印刷科技有限公司&nbsp;&nbsp;联系电话：022-26881958&nbsp;&nbsp;地址：天津市北辰高端装备产业园永兴道102号</span>@endif
+            {{--@if($is_erp)<span class="erp_footer">天津长荣云印刷科技有限公司&nbsp;&nbsp;联系电话：022-26881958&nbsp;&nbsp;地址：天津市北辰高端装备产业园永兴道102号</span>@endif--}}
         </div>
     </div>
 

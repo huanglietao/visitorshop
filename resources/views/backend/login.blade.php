@@ -17,7 +17,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header " style="background-color: #fff">
-            <a class="navbar-brand"  style="padding:0"><img src="../images/erp/crlogo.png" ></a>
+            <a class="navbar-brand"  style="padding:0"></a>
         </div>
 
     </div>
@@ -49,7 +49,7 @@
                                         <form id="login-form" class="form-horizontal" method="POST" action="" autocomplete="off" onsubmit="return false;">
                                             <input type="hidden" name="_token" value="{!! csrf_token() !!}">
                                             <h2 class="title" style="color: #ea4335;font-weight: 1000">数据配置平台</h2>
-                                            <p style="text-align: center;font-size: 16px">CONTENT MANAGEMENT SYSTEM</p>
+                                            <p style="text-align: center;font-size: 16px">此平台仅供观看</p>
                                             <div class="m-form-group">
                                                 <div class="m-input-group">
                                                     <img src="../images/user.jpg" class="img_icon"/>
@@ -91,12 +91,7 @@
 </div>
 <footer class="footer" style="clear:both">
 
-    <p class="address">
-        <span style="margin-right: 20px;">{{$systemInfo['site_copyright']}}</span>
-        @if(isset($systemInfo['site_record_num']))<span style="margin-right: 20px;">备案号：{{$systemInfo['site_record_num']}}</span>@endif
-        @if(isset($systemInfo['site_mobile']))<span style="margin-right: 20px;">联系方式: {{$systemInfo['site_mobile']}}</span>@endif
-        @if(isset($systemInfo['site_address']))<span>地址：{{$systemInfo['site_address']}}</span>@endif
-    </p>
+
 
 </footer>
 
